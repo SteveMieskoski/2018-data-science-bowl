@@ -1,0 +1,42 @@
+{
+    "DryRun": false,
+    "InstanceCount": 1,
+    "LaunchSpecification": {
+        "SecurityGroupIds": [
+            "sg-56a2dd2d"
+        ],
+        "AddressingType": "public",
+        "BlockDeviceMappings": [
+            {
+                "DeviceName": "/dev/sda1",
+                "Ebs": {
+                    "DeleteOnTermination": true,
+                    "SnapshotId": "snap-0a1fe87f6c682a54d",
+                    "VolumeSize": 50,
+                    "VolumeType": "gp2"
+                }
+            }
+        ],
+        "EbsOptimized": true,
+        "IamInstanceProfile": {
+            "Arn": "",
+            "Name": ""
+        },
+        "ImageId": "ami-3b6bce43",
+        "InstanceType": "p2.xlarge",
+        "KeyName": "aws-key",
+        "Monitoring": {
+            "Enabled": true
+        },
+        "Placement": {
+            "AvailabilityZone": "us-west-2b",
+            "GroupName": "",
+            "Tenancy": "default"
+        },
+        "SubnetId": "subnet-8a57b7ee",
+        "UserData": ""
+    },
+    "SpotPrice": "1.00",
+    "Type": "one-time",
+    "ValidUntil": "2019-01-22T06:43:47Z"
+}
